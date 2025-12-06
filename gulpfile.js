@@ -12,7 +12,10 @@ const cssnanoAdvanced = require('cssnano-preset-advanced')
 const sources = [
   'styles/base/*.scss',
   'styles/pages/*.scss',
-  'styles/vendors/tailwind.scss'
+  'styles/vendors/tailwind.scss',
+  'styles/components/*.scss',
+  'styles/sections/*.scss',
+  'styles/templates/*.scss',
 ];
 
 gulp.task('sass', function () {
