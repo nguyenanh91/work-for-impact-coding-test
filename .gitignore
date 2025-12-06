@@ -15,3 +15,18 @@ node_modules/
 ## Release files
 release
 *.zip
+
+.idea
+.liquidrc
+.env
+pnpm-lock.yaml
+
+*.lock
+package-lock.json
+.yarn
+.pnp.*
+.yarnrc.yml
+pnpm-lock.yaml
+sitespeed-result
+tools
+
