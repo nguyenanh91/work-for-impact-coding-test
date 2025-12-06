@@ -1,4 +1,4 @@
-# Dankgeek
+# WORK FOR IMPACT
 Work For Impact Demo Theme
 
 # Table of contents:
