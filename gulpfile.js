@@ -4,7 +4,6 @@ const flatten = require('gulp-flatten');
 const purgecss = require('gulp-purgecss')
 const postcss = require('gulp-postcss')
 const cleanCSS = require('gulp-clean-css');
-const tailwindcss = require('tailwindcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano')
 const cssnanoAdvanced = require('cssnano-preset-advanced')
@@ -12,7 +11,6 @@ const cssnanoAdvanced = require('cssnano-preset-advanced')
 const sources = [
   'styles/base/*.scss',
   'styles/pages/*.scss',
-  'styles/vendors/tailwind.scss',
   'styles/components/*.scss',
   'styles/sections/*.scss',
   'styles/templates/*.scss',
@@ -23,7 +21,6 @@ gulp.task('sass', function () {
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(flatten())
     .pipe(postcss([
-      tailwindcss('./tailwind.config.js'),
       autoprefixer()
     ]))
     .pipe(cleanCSS({ level: 2 }))
