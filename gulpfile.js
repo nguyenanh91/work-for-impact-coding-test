@@ -11,6 +11,7 @@ const cssnanoAdvanced = require('cssnano-preset-advanced')
 
 const sources = [
   'styles/base/*.scss',
+  'styles/pages/*.scss',
   'styles/vendors/tailwind.scss'
 ];
 

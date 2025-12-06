@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "concurrently 'npm:serve:*' --raw",
+    "dev": "concurrently 'npm:serve:*' --raw",
     "serve:theme": "shopify theme dev -s work-for-impact-dev-theme",
     "serve:scss": "gulp watch",
     "sass:compile": "gulp sass",
