@@ -43,12 +43,7 @@ window.accessibilityStrings = {
 };
 </script>
 
-<script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'core.js' | asset_url }}" defer="defer"></script>
 
 {%- if settings.animations_reveal_on_scroll -%}
     <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
@@ -58,6 +53,10 @@ window.accessibilityStrings = {
     <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
+{% unless template contains 'cart'  %}
 {%- if settings.cart_type == 'drawer' -%}
     <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+{%- else -%}
+    <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
+{% endunless %}
