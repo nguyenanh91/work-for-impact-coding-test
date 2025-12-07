@@ -7,7 +7,7 @@
   - section: {Object} Section object
 
   Usage:
-  {% render 'quantity-input' variant: variant %}
+  {% render 'product-quantity-input' product: product, section: section %}
 {% endcomment %}
 
 {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}

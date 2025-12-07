@@ -120,4 +120,4 @@ gulp.task('compile-core', compileCoreJs);
 gulp.task('compile-components', compileComponentJs);
 gulp.task('watch', watchFiles);
 gulp.task('build', gulp.parallel('compile-css', 'compile-core', 'compile-components'));
-gulp.task('default', gulp.parallel('compile-css', 'compile-core', 'compile-components', 'watch'));
+gulp.task('dev', gulp.parallel('compile-css', 'compile-core', 'compile-components', 'watch'));

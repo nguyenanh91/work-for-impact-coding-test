@@ -8,7 +8,7 @@
     "gulp:css:compile-css": "gulp compile-css",
     "gulp:js:compile-core": "gulp compile-core",
     "build": "gulp build",
-    "serve:watch": "gulp watch",
+    "serve:dev": "gulp dev",
     "pull:live": "shopify theme pull -s work-for-impact-dev-theme -l",
     "pull:local": "shopify theme pull -s work-for-impact-dev-theme -d",
     "pull": "shopify theme pull -s work-for-impact-dev-theme",

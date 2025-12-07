@@ -9,10 +9,10 @@
   justify-content: flex-end;
   background-color: rgba(var(--color-foreground), 0.5);
   transition: visibility var(--duration-default) ease;
-}
 
-.drawer.active {
-  visibility: visible;
+  &.active {
+    visibility: visible;
+  }
 }
 
 .drawer__inner {

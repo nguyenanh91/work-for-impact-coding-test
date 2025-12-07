@@ -412,7 +412,7 @@
                   </span>
                 </button>
               {% else %}
-                {% render 'quantity-input', variant: card_product.selected_or_first_available_variant, min: 0 %}
+                {% render 'variant-quantity-input', variant: card_product.selected_or_first_available_variant, min: 0 %}
               {% endif %}
             </quick-add-bulk>
           {% else %}
