@@ -1,4 +1,4 @@
-<html class="js" lang="en" style="--header-height: 6137px;"><head>
+<html class="js" lang="en" style="--header-height: 85px;"><head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -53,7 +53,7 @@ await import("//work-for-impact-dev-theme.myshopify.com/cdn/shopifycloud/shop-js
 
 </script>
 <script id="hot-reload-client" src="/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js" defer="" crossorigin=""></script>
-<script id="__st">var __st={"a":95580029232,"offset":-18000,"reqid":"97ddd3b5-096f-4e30-8f4d-960f72dbc029-1765214889","pageurl":"work-for-impact-dev-theme.myshopify.com\/products\/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack?variant=50417885970736","t":"prospect","u":"9a6efd8fd01a","p":"product","rtyp":"product","rid":10032244425008};</script>
+<script id="__st">var __st={"a":95580029232,"offset":-18000,"reqid":"5965b6e9-a740-4996-ab01-0f19d9d77621-1765220994","pageurl":"work-for-impact-dev-theme.myshopify.com\/products\/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack","t":"prospect","u":"c35459afd197","p":"product","rtyp":"product","rid":10032244425008};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-52AcMU7V7pcBOXWImdc/TAGTFKeNjmkeM1Pvks/DTgc=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//work-for-impact-dev-theme.myshopify.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-81c60534.js" crossorigin="anonymous"></script>
@@ -98,8 +98,8 @@ await import("//work-for-impact-dev-theme.myshopify.com/cdn/shopifycloud/shop-js
 }
 
       </style>
-<script id="sections-script" data-sections="header" defer="defer" src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/compiled_assets/scripts.js?341"></script>
-<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+<script id="sections-script" data-sections="header" defer="defer" src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/compiled_assets/scripts.js?372"></script>
+<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
 
     <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin="">
 
@@ -413,18 +413,33 @@ await import("//work-for-impact-dev-theme.myshopify.com/cdn/shopifycloud/shop-js
 </style>
 
 
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/base.css?v=89504580117782030551765129207" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-cart-items.css?v=105186407815351172811765103419" media="all" onload="this.media='all'"><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-cart-drawer.css?v=96423746723986884051765129261" media="all" onload="this.media='all'">
-    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-cart.css?v=125609550611563730641765130591" media="all" onload="this.media='all'">
-    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-totals.css?v=84523948030104733761765127909" media="all" onload="this.media='all'">
-    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-price.css?v=66783114730743525601765104973" media="all" onload="this.media='all'">
-    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-discounts.css?v=92375948017972199861765127909" media="all" onload="this.media='all'">
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('link[is="delay-stylesheet"]').forEach(link => {
+        link.rel = 'stylesheet';
+    });
+    const criticalCssElement = document.getElementById('critical-css');
+    if (criticalCssElement) {
+        criticalCssElement.remove();
+    }
+});
+</script>
+
+
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/base.css?v=89504580117782030551765129207" rel="stylesheet">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-cart-items.css?v=105186407815351172811765103419" rel="stylesheet"><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-cart-drawer.css?v=96423746723986884051765129261" media="all" rel="stylesheet">
+    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-cart.css?v=125609550611563730641765130591" media="all" rel="stylesheet">
+    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-totals.css?v=84523948030104733761765127909" media="all" rel="stylesheet">
+    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-price.css?v=66783114730743525601765104973" media="all" rel="stylesheet">
+    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-discounts.css?v=92375948017972199861765127909" media="all" rel="stylesheet">
     <link rel="preload" as="font" href="//work-for-impact-dev-theme.myshopify.com/cdn/fonts/assistant/assistant_n4.9120912a469cad1cc292572851508ca49d12e768.woff2" type="font/woff2" crossorigin="">
     
 
     <link rel="preload" as="font" href="//work-for-impact-dev-theme.myshopify.com/cdn/fonts/assistant/assistant_n4.9120912a469cad1cc292572851508ca49d12e768.woff2" type="font/woff2" crossorigin="">
     
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-predictive-search.css?v=17431716163697926001765129259" media="all" onload="this.media='all'">
+<link rel="stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-predictive-search.css?v=17431716163697926001765129259" media="all" onload="this.media='all'">
     <script>
 window.shopUrl = 'https://work-for-impact-dev-theme.myshopify.com';
     window.routes = {
@@ -470,7 +485,7 @@ window.accessibilityStrings = {
 };
 </script>
 
-<script src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/core.js?v=149288897396640378461765193877" defer="defer"></script><script src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/animations.js?v=17196670124098986891765126628" defer="defer"></script><script src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/predictive-search.js?v=55482991093117864481765126629" defer="defer"></script>
+<script src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/core.js?v=149288897396640378461765217192" defer="defer"></script><script src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/predictive-search.js?v=55482991093117864481765126629" defer="defer"></script>
 <script src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/cart-drawer.js?v=146526314549565530041765130836" defer="defer"></script>
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 95580029232,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "product"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
@@ -609,7 +624,7 @@ window.accessibilityStrings = {
       first.parentNode.insertBefore(script, first);
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":95580029232,"isMerchantRequest":null,"themeId":181228437808,"themeCityHash":"15477906705276262615","contentLanguage":"en","currency":"USD","eventMetadataId":"48167dba-630a-446f-94c0-2f71c6858296"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["f0df213a"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":95580029232,"isMerchantRequest":null,"themeId":181228437808,"themeCityHash":"9380363084540607178","contentLanguage":"en","currency":"USD","eventMetadataId":"18ce398b-a520-46bc-afa2-60a7c015a04d"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["f0df213a"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
     );
 
     var loaded = false;
@@ -630,8 +645,8 @@ window.accessibilityStrings = {
       var token = match? match[1]: undefined;
       if (!hasLoggedConversion(token)) {
         setCookieIfConversion(token);
-        window.ShopifyAnalytics.lib.track("Viewed Product",{"currency":"USD","variantId":50417885970736,"productId":10032244425008,"productGid":"gid:\/\/shopify\/Product\/10032244425008","name":"Pacsafe® V 16L anti-theft all-around backpack - Jet Black","price":"169.95","sku":null,"brand":"PacSafe","variant":"Jet Black","category":"","nonInteraction":true,"remote":false},undefined,undefined,{"shopifyEmitted":true});
-      window.ShopifyAnalytics.lib.track("monorail:\/\/trekkie_storefront_viewed_product\/1.1",{"currency":"USD","variantId":50417885970736,"productId":10032244425008,"productGid":"gid:\/\/shopify\/Product\/10032244425008","name":"Pacsafe® V 16L anti-theft all-around backpack - Jet Black","price":"169.95","sku":null,"brand":"PacSafe","variant":"Jet Black","category":"","nonInteraction":true,"remote":false,"referer":"https:\/\/work-for-impact-dev-theme.myshopify.com\/products\/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack?variant=50417885970736"});
+        window.ShopifyAnalytics.lib.track("Viewed Product",{"currency":"USD","variantId":50417885937968,"productId":10032244425008,"productGid":"gid:\/\/shopify\/Product\/10032244425008","name":"Pacsafe® V 16L anti-theft all-around backpack - Ocean","price":"169.95","sku":null,"brand":"PacSafe","variant":"Ocean","category":"","nonInteraction":true,"remote":false},undefined,undefined,{"shopifyEmitted":true});
+      window.ShopifyAnalytics.lib.track("monorail:\/\/trekkie_storefront_viewed_product\/1.1",{"currency":"USD","variantId":50417885937968,"productId":10032244425008,"productGid":"gid:\/\/shopify\/Product\/10032244425008","name":"Pacsafe® V 16L anti-theft all-around backpack - Ocean","price":"169.95","sku":null,"brand":"PacSafe","variant":"Ocean","category":"","nonInteraction":true,"remote":false,"referer":"https:\/\/work-for-impact-dev-theme.myshopify.com\/products\/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack"});
       }
     });
 
@@ -643,7 +658,7 @@ window.accessibilityStrings = {
 
 })();</script><script async="" src="//work-for-impact-dev-theme.myshopify.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js"></script>
 <script defer="" src="https://work-for-impact-dev-theme.myshopify.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-2.1.2.min.js" data-application="storefront-renderer" data-shop-id="95580029232" data-render-region="gcp-us-central1" data-page-type="product" data-theme-instance-id="181228437808" data-theme-name="Dawn" data-theme-version="15.4.0" data-monorail-region="shop_domain" data-resource-timing-sampling-rate="10" data-shs="true" data-shs-beacon="true" data-shs-export-with-fetch="true" data-shs-logs-sample-rate="1"></script>
-<style>#PBarNextFrameWrapper[popover=manual]::backdrop{display:none!important;opacity:0!important;visibility:hidden!important;background:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}#PBarNextFrameWrapper{view-transition-name:shopify-preview-bar}:view-transition-group(shopify-preview-bar){z-index:calc(infinity)}</style><style data-description="gravity-font-faces">
+<style>#PBarNextFrameWrapper[popover=manual]::backdrop{display:none!important;opacity:0!important;visibility:hidden!important;background:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}#PBarNextFrameWrapper{view-transition-name:shopify-preview-bar}:view-transition-group(shopify-preview-bar){z-index:calc(infinity)}</style><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><style data-description="gravity-font-faces">
 @font-face {
   font-family: 'GTStandard-M';
   src: url('https://cdn.shopify.com/shop-assets/static_uploads/shoplift/GTStandard-MRegular.woff2')
@@ -676,8 +691,8 @@ window.accessibilityStrings = {
       Skip to content
     </a>
 
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/quantity-popover.css?v=106658712741801428741765129260" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-card.css?v=43752454175594843881765129015" media="all" onload="this.media='all'">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/quantity-popover.css?v=106658712741801428741765129260" media="all" rel="stylesheet">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-card.css?v=43752454175594843881765129015" media="all" rel="stylesheet">
 
 <script src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/quantity-popover.js?v=152548064748721878141765126629" defer="defer"></script>
 
@@ -724,7 +739,7 @@ window.accessibilityStrings = {
                             
                             <a href="/products/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack?variant=50417885970736" class="cart-item__link" tabindex="-1" aria-hidden="true"> </a>
 
-<img src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_1.jpg?crop=center&amp;height=300&amp;v=1765095764&amp;width=300" data-src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_1.jpg?crop=center&amp;height=300&amp;v=1765095764&amp;width=300" class="lozad  cart-item__image " width="300" height="300" data-sizes=" 300px" data-srcset="//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_1.jpg?crop=center&amp;height=300&amp;v=1765095764&amp;width=300 300w" loading="lazy" alt="" srcset="//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_1.jpg?crop=center&amp;height=300&amp;v=1765095764&amp;width=300 300w" data-loaded="true">
+<img src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_1.jpg?v=1765095764&amp;width=150" data-src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_1.jpg?crop=center&amp;height=300&amp;v=1765095764&amp;width=300" class="lozad  cart-item__image " width="300" height="300" data-sizes=" 300px" data-srcset="//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_1.jpg?crop=center&amp;height=300&amp;v=1765095764&amp;width=300 300w" loading="lazy" alt="">
                         </td>
 
                         <td class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct"><a href="/products/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack?variant=50417885970736" class="cart-item__name h4 break">Pacsafe® V 16L anti-theft all-around backpack</a><div class="product-option">
@@ -818,8 +833,8 @@ window.accessibilityStrings = {
   </div>
 </cart-drawer>
 <!-- BEGIN sections: header-group -->
-<div id="shopify-section-sections--25597667737904__announcement-bar" class="shopify-section shopify-section-group-header-group announcement-bar-section"><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-slideshow.css?v=56701258623080591981765103419" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-slider.css?v=82391440166603682751765103419" media="all" onload="this.media='all'">
+<div id="shopify-section-sections--25597667737904__announcement-bar" class="shopify-section shopify-section-group-header-group announcement-bar-section"><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-slideshow.css?v=56701258623080591981765103419" media="all" rel="stylesheet">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-slider.css?v=82391440166603682751765103419" media="all" rel="stylesheet">
 
 <div class="utility-bar color-scheme-1 gradient utility-bar--bottom-border">
   <div class="page-width utility-bar__grid"><div class="announcement-bar" role="region" aria-label="Announcement"><p class="announcement-bar__message h5">
@@ -829,10 +844,10 @@ window.accessibilityStrings = {
 </div>
 
 
-</div><div id="shopify-section-sections--25597667737904__header" class="shopify-section shopify-section-group-header-group section-header"><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-list-menu.css?v=122738141059900317121765103418" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-search.css?v=176591845632652382011765129260" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-menu-drawer.css?v=82931352461262760731765127909" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-cart-notification.css?v=16425511051407134331765128444" media="all" onload="this.media='all'"><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-price.css?v=66783114730743525601765104973" media="all" onload="this.media='all'"><style>
+</div><div id="shopify-section-sections--25597667737904__header" class="shopify-section shopify-section-group-header-group section-header"><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-list-menu.css?v=122738141059900317121765103418" media="all" rel="stylesheet">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-search.css?v=176591845632652382011765129260" media="all" rel="stylesheet">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-menu-drawer.css?v=82931352461262760731765127909" media="all" rel="stylesheet">
+<link rel="stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-cart-notification.css?v=16425511051407134331765128444" media="all" onload="this.media='all'"><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-price.css?v=66783114730743525601765104973" media="all" rel="stylesheet"><style>
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -1027,17 +1042,17 @@ window.accessibilityStrings = {
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       <section id="shopify-section-template--25597668393264__main" class="shopify-section section"><product-info id="MainProduct-template--25597668393264__main" class="section-template--25597668393264__main-padding gradient color-scheme-1" data-section="template--25597668393264__main" data-product-id="10032244425008" data-update-url="true" data-url="/products/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack">
-  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/section-main-product.css?v=85167260870757481821765129208" media="all" onload="this.media='all'">
-  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-accordion.css?v=86928688844567019531765129142" media="all" onload="this.media='all'">
-  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-price.css?v=66783114730743525601765104973" media="all" onload="this.media='all'">
-  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-slider.css?v=82391440166603682751765103419" media="all" onload="this.media='all'">
-  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-rating.css?v=38777928977489956201765129260" media="all" onload="this.media='all'">
-  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-deferred-media.css?v=66790350024693128241765129015" media="all" onload="this.media='all'">
+  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/section-main-product.css?v=85167260870757481821765129208" media="all" rel="stylesheet">
+  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-accordion.css?v=86928688844567019531765216047" media="all" rel="stylesheet">
+  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-price.css?v=66783114730743525601765104973" media="all" rel="stylesheet">
+  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-slider.css?v=82391440166603682751765103419" media="all" rel="stylesheet">
+  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-rating.css?v=38777928977489956201765129260" media="all" rel="stylesheet">
+  <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-deferred-media.css?v=66790350024693128241765129015" media="all" rel="stylesheet">
 
   
-    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-product-variant-picker.css?v=26339001650995779211765103419" media="all" onload="this.media='all'">
-    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-swatch-input.css?v=158800409352353945061765103419" media="all" onload="this.media='all'">
-    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-swatch.css?v=68835163209551624561765129015" media="all" onload="this.media='all'">
+    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-product-variant-picker.css?v=26339001650995779211765103419" media="all" rel="stylesheet">
+    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-swatch-input.css?v=158800409352353945061765103419" media="all" rel="stylesheet">
+    <link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-swatch.css?v=68835163209551624561765129015" media="all" rel="stylesheet">
   
 <style data-shopify="">.section-template--25597668393264__main-padding {
       padding-top: 27px;
@@ -1063,7 +1078,7 @@ window.accessibilityStrings = {
       Skip to product information
     </a>
     <ul id="Slider-Gallery-template--25597668393264__main" class="product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile" role="presentation">
-<li id="Slide-template--25597668393264__main-42524986540336" class="product__media-item grid__item slider__slide is-active scroll-trigger animate--fade-in" data-media-id="template--25597668393264__main-42524986540336" role="presentation">
+<li id="Slide-template--25597668393264__main-42524986540336" class="product__media-item grid__item slider__slide is-active" data-media-id="template--25597668393264__main-42524986540336" role="presentation">
 
 <div class="product-media-container media-type-image media-fit-contain global-media-settings gradient constrain-height" style="--ratio: 1.0; --preview-ratio: 1.0;">
   <modal-opener class="product__modal-opener product__modal-opener--image" data-modal="#ProductModal-template--25597668393264__main">
@@ -1089,7 +1104,7 @@ window.accessibilityStrings = {
   </modal-opener></div>
 
           </li>
-<li id="Slide-template--25597668393264__main-42524986900784" class="product__media-item grid__item slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen" data-media-id="template--25597668393264__main-42524986900784" role="presentation">
+<li id="Slide-template--25597668393264__main-42524986900784" class="product__media-item grid__item slider__slide" data-media-id="template--25597668393264__main-42524986900784" role="presentation">
 
 <div class="product-media-container media-type-image media-fit-contain global-media-settings gradient constrain-height" style="--ratio: 1.0; --preview-ratio: 1.0;">
   <modal-opener class="product__modal-opener product__modal-opener--image" data-modal="#ProductModal-template--25597668393264__main">
@@ -1115,7 +1130,7 @@ window.accessibilityStrings = {
   </modal-opener></div>
 
           </li>
-<li id="Slide-template--25597668393264__main-42524987457840" class="product__media-item grid__item slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen" data-media-id="template--25597668393264__main-42524987457840" role="presentation">
+<li id="Slide-template--25597668393264__main-42524987457840" class="product__media-item grid__item slider__slide" data-media-id="template--25597668393264__main-42524987457840" role="presentation">
 
 <div class="product-media-container media-type-image media-fit-contain global-media-settings gradient constrain-height" style="--ratio: 1.0; --preview-ratio: 1.0;">
   <modal-opener class="product__modal-opener product__modal-opener--image" data-modal="#ProductModal-template--25597668393264__main">
@@ -1141,7 +1156,7 @@ window.accessibilityStrings = {
   </modal-opener></div>
 
           </li>
-<li id="Slide-template--25597668393264__main-42524987687216" class="product__media-item grid__item slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen" data-media-id="template--25597668393264__main-42524987687216" role="presentation">
+<li id="Slide-template--25597668393264__main-42524987687216" class="product__media-item grid__item slider__slide" data-media-id="template--25597668393264__main-42524987687216" role="presentation">
 
 <div class="product-media-container media-type-image media-fit-contain global-media-settings gradient constrain-height" style="--ratio: 1.0; --preview-ratio: 1.0;">
   <modal-opener class="product__modal-opener product__modal-opener--image" data-modal="#ProductModal-template--25597668393264__main">
@@ -1167,7 +1182,7 @@ window.accessibilityStrings = {
   </modal-opener></div>
 
           </li>
-<li id="Slide-template--25597668393264__main-42524987851056" class="product__media-item grid__item slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen" data-media-id="template--25597668393264__main-42524987851056" role="presentation">
+<li id="Slide-template--25597668393264__main-42524987851056" class="product__media-item grid__item slider__slide" data-media-id="template--25597668393264__main-42524987851056" role="presentation">
 
 <div class="product-media-container media-type-image media-fit-contain global-media-settings gradient constrain-height" style="--ratio: 1.0; --preview-ratio: 1.0;">
   <modal-opener class="product__modal-opener product__modal-opener--image" data-modal="#ProductModal-template--25597668393264__main">
@@ -1193,7 +1208,7 @@ window.accessibilityStrings = {
   </modal-opener></div>
 
           </li>
-<li id="Slide-template--25597668393264__main-42524988145968" class="product__media-item grid__item slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen" data-media-id="template--25597668393264__main-42524988145968" role="presentation">
+<li id="Slide-template--25597668393264__main-42524988145968" class="product__media-item grid__item slider__slide" data-media-id="template--25597668393264__main-42524988145968" role="presentation">
 
 <div class="product-media-container media-type-image media-fit-contain global-media-settings gradient constrain-height" style="--ratio: 1.0; --preview-ratio: 1.0;">
   <modal-opener class="product__modal-opener product__modal-opener--image" data-modal="#ProductModal-template--25597668393264__main">
@@ -1219,7 +1234,7 @@ window.accessibilityStrings = {
   </modal-opener></div>
 
           </li>
-<li id="Slide-template--25597668393264__main-42524988342576" class="product__media-item grid__item slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen" data-media-id="template--25597668393264__main-42524988342576" role="presentation">
+<li id="Slide-template--25597668393264__main-42524988342576" class="product__media-item grid__item slider__slide" data-media-id="template--25597668393264__main-42524988342576" role="presentation">
 
 <div class="product-media-container media-type-image media-fit-contain global-media-settings gradient constrain-height" style="--ratio: 1.0; --preview-ratio: 1.0;">
   <modal-opener class="product__modal-opener product__modal-opener--image" data-modal="#ProductModal-template--25597668393264__main">
@@ -1245,7 +1260,7 @@ window.accessibilityStrings = {
   </modal-opener></div>
 
           </li>
-<li id="Slide-template--25597668393264__main-42524988571952" class="product__media-item grid__item slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen" data-media-id="template--25597668393264__main-42524988571952" role="presentation">
+<li id="Slide-template--25597668393264__main-42524988571952" class="product__media-item grid__item slider__slide" data-media-id="template--25597668393264__main-42524988571952" role="presentation">
 
 <div class="product-media-container media-type-image media-fit-contain global-media-settings gradient constrain-height" style="--ratio: 1.0; --preview-ratio: 1.0;">
   <modal-opener class="product__modal-opener product__modal-opener--image" data-modal="#ProductModal-template--25597668393264__main">
@@ -1271,7 +1286,7 @@ window.accessibilityStrings = {
   </modal-opener></div>
 
           </li>
-<li id="Slide-template--25597668393264__main-42524988768560" class="product__media-item grid__item slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen" data-media-id="template--25597668393264__main-42524988768560" role="presentation">
+<li id="Slide-template--25597668393264__main-42524988768560" class="product__media-item grid__item slider__slide" data-media-id="template--25597668393264__main-42524988768560" role="presentation">
 
 <div class="product-media-container media-type-image media-fit-contain global-media-settings gradient constrain-height" style="--ratio: 1.0; --preview-ratio: 1.0;">
   <modal-opener class="product__modal-opener product__modal-opener--image" data-modal="#ProductModal-template--25597668393264__main">
@@ -1297,7 +1312,7 @@ window.accessibilityStrings = {
   </modal-opener></div>
 
           </li>
-<li id="Slide-template--25597668393264__main-42524988965168" class="product__media-item grid__item slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen" data-media-id="template--25597668393264__main-42524988965168" role="presentation">
+<li id="Slide-template--25597668393264__main-42524988965168" class="product__media-item grid__item slider__slide" data-media-id="template--25597668393264__main-42524988965168" role="presentation">
 
 <div class="product-media-container media-type-image media-fit-contain global-media-settings gradient constrain-height" style="--ratio: 1.0; --preview-ratio: 1.0;">
   <modal-opener class="product__modal-opener product__modal-opener--image" data-modal="#ProductModal-template--25597668393264__main">
@@ -1324,17 +1339,17 @@ window.accessibilityStrings = {
 
           </li></ul>
     <div class="slider-buttons quick-add-hidden">
-      <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="Slide left" disabled="disabled">
+      <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="Slide left">
         <span class="svg-wrapper"><svg class="icon icon-caret" viewBox="0 0 10 6"><path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"></path></svg>
 </span>
       </button>
       <div class="slider-counter caption">
-        <span class="slider-counter--current">NaN</span>
+        <span class="slider-counter--current">1</span>
         <span aria-hidden="true"> / </span>
         <span class="visually-hidden">of</span>
-        <span class="slider-counter--total">-Infinity</span>
+        <span class="slider-counter--total">10</span>
       </div>
-      <button type="button" class="slider-button slider-button--next" name="next" aria-label="Slide right" disabled="disabled">
+      <button type="button" class="slider-button slider-button--next" name="next" aria-label="Slide right">
         <span class="svg-wrapper"><svg class="icon icon-caret" viewBox="0 0 10 6"><path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"></path></svg>
 </span>
       </button>
@@ -1432,7 +1447,7 @@ window.accessibilityStrings = {
     </slider-component></media-gallery>
 
       </div>
-      <div class="product__info-wrapper grid__item scroll-trigger animate--slide-in">
+      <div class="product__info-wrapper grid__item">
         <section id="ProductInfo-template--25597668393264__main" class="product__info-container product__column-sticky"><p class="product__text inline-richtext caption-with-letter-spacing">PacSafe</p><div class="product__title">
                   <h1>Pacsafe® V 16L anti-theft all-around backpack</h1>
                   <a href="/products/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack" class="product__title">
@@ -1534,7 +1549,7 @@ window.accessibilityStrings = {
 
 </div>
 </button><div data-shopify="payment-button" class="shopify-payment-button"> <shopify-accelerated-checkout recommended="null" fallback="{&quot;name&quot;:&quot;buy_it_now&quot;,&quot;wallet_params&quot;:{}}" access-token="6593399a079b65d2614ce144970ac3b9" buyer-country="US" buyer-locale="en" buyer-currency="USD" variant-params="[{&quot;id&quot;:50417885937968,&quot;requiresShipping&quot;:true},{&quot;id&quot;:50417885970736,&quot;requiresShipping&quot;:true}]" shop-id="95580029232" disable-compat="" requires-shipping=""><shopify-buy-it-now-button access-token="6593399a079b65d2614ce144970ac3b9" buyer-country="US" buyer-currency="USD" wallet-params="{}" page-type="product" slot="button" requires-shipping="" call-to-action=""><button type="button" class="shopify-payment-button__button shopify-payment-button__button--unbranded">Buy it now</button></shopify-buy-it-now-button></shopify-accelerated-checkout> <small id="shopify-buyer-consent" class="hidden" aria-hidden="true" data-consent-type="subscription"> This item is a recurring or deferred purchase. By continuing, I agree to the <span id="shopify-subscription-policy-button">cancellation policy</span> and authorize you to charge my payment method at the prices, frequency and dates listed on this page until my order is fulfilled or I cancel, if permitted. </small> </div>
-</div><input type="hidden" name="product-id" value="10032244425008"><input type="hidden" name="section-id" value="template--25597668393264__main"></form></product-form><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-pickup-availability.css?v=143033412329829198551765129259" media="all" onload="this.media='all'"><pickup-availability class="product__pickup-availabilities quick-add-hidden" data-root-url="/" data-variant-id="50417885970736" data-has-only-default-variant="false" data-product-page-color-scheme="gradient color-scheme-1">
+</div><input type="hidden" name="product-id" value="10032244425008"><input type="hidden" name="section-id" value="template--25597668393264__main"></form></product-form><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-pickup-availability.css?v=143033412329829198551765129259" media="all" rel="stylesheet"><pickup-availability class="product__pickup-availabilities quick-add-hidden" data-root-url="/" data-variant-id="50417885970736" data-has-only-default-variant="false" data-product-page-color-scheme="gradient color-scheme-1">
       <template>
         <pickup-availability-preview class="pickup-availability-preview">
           <span class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-unavailable" viewBox="0 0 20 20"><path fill="#DE3618" stroke="#fff" d="M13.94 3.94 10 7.878l-3.94-3.94A1.499 1.499 0 1 0 3.94 6.06L7.88 10l-3.94 3.94a1.499 1.499 0 1 0 2.12 2.12L10 12.12l3.94 3.94a1.497 1.497 0 0 0 2.12 0 1.5 1.5 0 0 0 0-2.12L12.122 10l3.94-3.94a1.499 1.499 0 1 0-2.121-2.12z"></path></svg>
@@ -1549,7 +1564,7 @@ window.accessibilityStrings = {
       </template>
     </pickup-availability>
 
-    <script src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/pickup-availability.js?v=80693260306034575581765126629" defer="defer"></script></div>
+    <script src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/pickup-availability.js?v=80693260306034575581765216047" defer="defer"></script></div>
 <div class="product__description rte quick-add-hidden">
                     <div class="variant-marketing-description">Compact yet highly organized, this 16L anti-theft backpack is designed to securely carry your day trip essentials. It features two lockable compartments, each equipped with internal organization pockets to ensure everything stays neatly arranged. Additionally, the backpack includes a padded laptop sleeve designed to accommodate a 13" MacBook, providing extra protection for your device. For added convenience, the backpack includes a hidden pocket on the back to safely store important items such as your phone, providing easy access whenever needed. It also features a luggage slip, allowing you to securely attach the backpack to the handle of your wheeled luggage.</div>
 <p><span class="variant-pet-bottles-start">This product is made with</span><span>&nbsp;</span><span class="variant-pet-bottles-econyl"></span><span class="variant-pet-bottles-middle">post-consumer recycled polyester (rPET), equivalent to</span><span>&nbsp;</span><span class="variant-pet-bottles">20</span><span>&nbsp;</span><span class="variant-pet-bottles-end">recycled plastic bottles, and is treated with a 100% PFC-free water repellency.</span></p>
@@ -1571,7 +1586,7 @@ window.accessibilityStrings = {
     <div class="share-button__fallback motion-reduce">
       <div class="field">
         <span id="ShareMessage-template--25597668393264__main" class="share-button__message hidden" role="status"> </span>
-        <input type="text" class="field__input" id="ShareUrl-template--25597668393264__main" value="https://work-for-impact-dev-theme.myshopify.com/products/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack?variant=50417885970736" placeholder="Link" onclick="this.select();" readonly="">
+        <input type="text" class="field__input" id="ShareUrl-template--25597668393264__main" value="https://work-for-impact-dev-theme.myshopify.com/products/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack" placeholder="Link" onclick="this.select();" readonly="">
         <label class="field__label" for="ShareUrl-template--25597668393264__main">Link</label>
       </div>
       <button class="share-button__close hidden">
@@ -1611,9 +1626,9 @@ window.accessibilityStrings = {
 </product-info>
 
 
-</section><section id="shopify-section-template--25597668393264__related-products" class="shopify-section section"><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-card.css?v=43752454175594843881765129015" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-price.css?v=66783114730743525601765104973" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/section-related-products.css?v=151872941567544360021765016898" media="all" onload="this.media='all'">
+</section><section id="shopify-section-template--25597668393264__related-products" class="shopify-section section"><link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-card.css?v=43752454175594843881765129015" media="all" rel="stylesheet">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-price.css?v=66783114730743525601765104973" media="all" rel="stylesheet">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/section-related-products.css?v=151872941567544360021765016898" media="all" rel="stylesheet">
 
 <style data-shopify="">.section-template--25597668393264__related-products-padding {
     padding-top: 27px;
@@ -1626,7 +1641,7 @@ window.accessibilityStrings = {
       padding-bottom: 28px;
     }
   }</style><div class="color-scheme-1 gradient">
-  <product-recommendations class="related-products page-width section-template--25597668393264__related-products-padding isolate scroll-trigger animate--slide-in" data-url="/recommendations/products?limit=4" data-section-id="template--25597668393264__related-products" data-product-id="10032244425008">
+  <product-recommendations class="related-products page-width section-template--25597668393264__related-products-padding isolate" data-url="/recommendations/products?limit=4" data-section-id="template--25597668393264__related-products" data-product-id="10032244425008">
     
   </product-recommendations>
   </div>
@@ -1637,11 +1652,11 @@ window.accessibilityStrings = {
 
     <!-- BEGIN sections: footer-group -->
 <div id="shopify-section-sections--25597667705136__footer" class="shopify-section shopify-section-group-footer-group">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/section-footer.css?v=79480567853082522441765129208" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-newsletter.css?v=120934540448998666301765193635" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-list-menu.css?v=122738141059900317121765103418" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-list-payment.css?v=47042021463635198091765103419" media="all" onload="this.media='all'">
-<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-list-social.css?v=165988835607397199961765193635" media="all" onload="this.media='all'"><style data-shopify="">.footer {
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/section-footer.css?v=79480567853082522441765129208" media="all" rel="stylesheet">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-newsletter.css?v=120934540448998666301765193635" media="all" rel="stylesheet">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-list-menu.css?v=122738141059900317121765103418" media="all" rel="stylesheet">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-list-payment.css?v=47042021463635198091765103419" media="all" rel="stylesheet">
+<link is="delay-stylesheet" href="//work-for-impact-dev-theme.myshopify.com/cdn/shop/t/5/assets/component-list-social.css?v=165988835607397199961765193635" media="all" rel="stylesheet"><style data-shopify="">.footer {
     margin-top: 0px;
   }
 
@@ -1659,7 +1674,7 @@ window.accessibilityStrings = {
       padding-top: 36px;
       padding-bottom: 36px;
     }
-  }</style><footer class="footer color-scheme-1 gradient section-sections--25597667705136__footer-padding"><div class="footer__content-top page-width"><div class="footer-block--newsletter scroll-trigger animate--slide-in" data-cascade="" style="--animation-order: 0;"><div class="footer-block__newsletter"><h2 class="footer-block__heading inline-richtext">Subscribe to our emails</h2><form method="post" action="/contact#ContactFooter" id="ContactFooter" accept-charset="UTF-8" class="footer__newsletter newsletter-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter">
+  }</style><footer class="footer color-scheme-1 gradient section-sections--25597667705136__footer-padding"><div class="footer__content-top page-width"><div class="footer-block--newsletter"><div class="footer-block__newsletter"><h2 class="footer-block__heading inline-richtext">Subscribe to our emails</h2><form method="post" action="/contact#ContactFooter" id="ContactFooter" accept-charset="UTF-8" class="footer__newsletter newsletter-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter-form__field-wrapper">
                   <div class="field">
                     <input id="NewsletterForm--sections--25597667705136__footer" type="email" name="contact[email]" class="field__input" value="" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" placeholder="Email" required="">
@@ -1670,7 +1685,7 @@ window.accessibilityStrings = {
                       <span class="svg-wrapper"><!-- inline_asset_content: Asset not found. --></span>
                     </button>
                   </div></div></form></div></div>
-      </div><div class="footer__content-bottom scroll-trigger animate--slide-in" data-cascade="" style="--animation-order: 0;">
+      </div><div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate"></div>
       <div class="footer__column footer__column--info"><div class="footer__payment">
@@ -1698,7 +1713,7 @@ window.accessibilityStrings = {
     </ul>
   
 
-<shop-cart-sync experiments="{}" data-instance-id="0147ac57-1fae-41d8-9504-2056d81d58ab"></shop-cart-sync><div id="PBarNextFrameWrapper" popover="manual" style="height: calc(68px + env(safe-area-inset-bottom, 0)); width: 100%; position: fixed; top: unset; right: unset; bottom: 0px; left: 0px; border: none; box-sizing: border-box; overflow: hidden; margin: 0px; background-color: transparent !important;"><iframe id="PBarNextFrame" src="https://cdn.shopify.com/shopifycloud/preview-bar/index.html" sandbox="allow-same-origin allow-popups allow-top-navigation allow-scripts allow-forms" style="width: 100%; height: 100dvh; border: none; position: absolute; bottom: 0px; left: 0px;"></iframe></div><product-modal id="ProductModal-template--25597668393264__main" class="product-media-modal media-modal" data-section="template--25597668393264__main">
+<div id="PBarNextFrameWrapper" popover="manual" style="height: calc(68px + env(safe-area-inset-bottom, 0)); width: 100%; position: fixed; top: unset; right: unset; bottom: 0px; left: 0px; border: none; box-sizing: border-box; overflow: hidden; margin: 0px; background-color: transparent !important;"><iframe id="PBarNextFrame" src="https://cdn.shopify.com/shopifycloud/preview-bar/index.html" sandbox="allow-same-origin allow-popups allow-top-navigation allow-scripts allow-forms" style="width: 100%; height: 100dvh; border: none; position: absolute; bottom: 0px; left: 0px;"></iframe></div><product-modal id="ProductModal-template--25597668393264__main" class="product-media-modal media-modal" data-section="template--25597668393264__main">
   <div class="product-media-modal__dialog color-scheme-1 gradient" role="dialog" aria-label="Media gallery" aria-modal="true" tabindex="-1">
     <button id="ModalClose-template--25597668393264__main" type="button" class="product-media-modal__toggle" aria-label="Close">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-close" viewBox="0 0 18 17"><path fill="currentColor" d="M.865 15.978a.5.5 0 0 0 .707.707l7.433-7.431 7.579 7.282a.501.501 0 0 0 .846-.37.5.5 0 0 0-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 1 0-.707-.708L8.991 7.853 1.413.573a.5.5 0 1 0-.693.72l7.563 7.268z"></path></svg>
@@ -1727,4 +1742,4 @@ window.accessibilityStrings = {
 <img class="global-media-settings global-media-settings--no-shadow" srcset="//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_9.jpg?v=1765095866&amp;width=550 550w,//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_9.jpg?v=1765095866&amp;width=1100 1100w,//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_9.jpg?v=1765095866&amp;width=1445 1445w,//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_9.jpg?v=1765095866&amp;width=1680 1680w,//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_9.jpg?v=1765095866&amp;width=2048 2048w,//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_9.jpg?v=1765095866&amp;width=2200 2200w,//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_9.jpg?v=1765095866&amp;width=2890 2890w,//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_9.jpg?v=1765095866&amp;width=4096 4096w,//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_9.jpg?v=1765095866 5000w
     " sizes="(min-width: 750px) calc(100vw - 22rem), 1100px" src="//work-for-impact-dev-theme.myshopify.com/cdn/shop/files/PacsafeV_16LAllAroundBackpack_61120658_Ocean_9.jpg?v=1765095866&amp;width=1445" alt="Pacsafe® V 16L anti-theft all-around backpack" loading="lazy" width="1100" height="1100" data-media-id="42524988965168"></div>
   </div>
-</product-modal><div tabindex="-1" aria-hidden="true" id="web-pixels-manager-sandbox-container" data-shopify-privacy="exclude" style="height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;"><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-ae1676cfwd2530674p4253c800m34e853cb" src="https://work-for-impact-dev-theme.myshopify.com/web-pixels@ae1676cfwd2530674p4253c800m34e853cb/custom/web-pixel-shopify-custom-pixel@0450/sandbox/modern/products/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack?variant=50417885970736" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-ae1676cfwd2530674p4253c800m34e853cb" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe></div></body></html>
+</product-modal><div tabindex="-1" aria-hidden="true" id="web-pixels-manager-sandbox-container" data-shopify-privacy="exclude" style="height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;"><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-ae1676cfwd2530674p4253c800m34e853cb" src="https://work-for-impact-dev-theme.myshopify.com/web-pixels@ae1676cfwd2530674p4253c800m34e853cb/custom/web-pixel-shopify-custom-pixel@0450/sandbox/modern/products/pacsafe%C2%AE-v-16l-anti-theft-all-around-backpack" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-ae1676cfwd2530674p4253c800m34e853cb" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe></div><shop-cart-sync experiments="{}" data-instance-id="db627692-cfb6-4252-ac44-a4d8bc6ec839"></shop-cart-sync></body></html>
