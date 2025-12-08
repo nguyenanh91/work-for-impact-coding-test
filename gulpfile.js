@@ -95,6 +95,7 @@ function compileCoreJs() {
     .src([
       'scripts/core/constants.js',
       'scripts/core/pubsub.js',
+      'scripts/core/lozad.js',
       'scripts/core/global.js',
       'scripts/core/details-disclosure.js',
       'scripts/core/details-modal.js',

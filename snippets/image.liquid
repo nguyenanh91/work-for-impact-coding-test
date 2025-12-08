@@ -1,0 +1,85 @@
+{% liquid
+  assign data_sizes = ''
+  assign media_sizes = media_sizes | split: ',' | reverse | join: ',' | split: ','
+
+  assign data_srcset = ''
+  assign loading_type = loading_type | default: 'lazy'
+  assign fetch_priority = fetch_priority | default: 'auto'
+  assign aspect_ratio_arr = aspect_ratio | default: '1:1' | split: ':'
+  assign aspect_ratio_width = aspect_ratio_arr[0] | plus: 0
+  assign aspect_ratio_height = aspect_ratio_arr[1] | plus: 0
+  assign data_src = ''
+  assign image_width = ''
+  assign image_height = ''
+
+  for media_size in media_sizes
+    assign media_query = blank
+    assign next_index = forloop.index0 | plus: 1
+    assign size_item = media_size | split: '-'
+    assign width_str = size_item[1] | default: size_item[0]
+    assign width_number = width_str | plus: 0
+    assign sizes_length = media_sizes | size
+    assign image_url = image_src
+    assign min_media_size = ''
+    assign height_number = width_number | times: aspect_ratio_height | divided_by: aspect_ratio_width
+
+    assign image_url = image_src | image_url: width: width_number, height: height_number | append: ' ' | append: width_number | append: 'w'
+
+    if data_srcset != ''
+      assign data_srcset = data_srcset | append: ', '
+    endif
+
+    assign data_srcset = data_srcset | append: image_url
+
+    if next_index < sizes_length
+      assign size_next_item = media_sizes[next_index]
+      assign size_next_item = size_next_item | split: '-'
+    endif
+
+    if forloop.index < sizes_length
+      assign media_width = size_item[0] | plus: 0
+      assign media_query = '(min-width: ' | append: media_width | append: 'px)'
+      assign media_query = media_query | append: ' ' | append: width_number | append: 'px,'
+    endif
+
+    if forloop.index == sizes_length
+      assign min_media_size = '' | append: ' ' | append: size_item[0] | append: 'px'
+      assign data_src = image_src | image_url: width: width_number, height: height_number
+      assign image_width = width_number
+      assign image_height = height_number
+    endif
+
+    if media_query
+      assign data_sizes = data_sizes | append: media_query
+    endif
+
+  endfor
+
+  assign data_sizes = data_sizes | append: min_media_size
+
+  assign classname = ''
+  if class != ''
+    assign classname = class | prepend: ' '
+  endif
+
+  if data_sizes == blank
+    assign data_sizes = 'auto'
+  endif
+%}
+
+<img
+  {% if first_load_size %}
+    src="{{ image_src | image_url: width: first_load_size }}"
+  {% endif %}
+  data-src="{{ data_src }}"
+  class="lozad {{classname}}"
+  width="{{ image_width }}"
+  height="{{ image_height }}"
+  data-sizes="{{ data_sizes }}"
+  data-srcset="{{ data_srcset }}"
+  {% if style %}
+    style="{{ style }}"
+  {% endif %}
+  loading="lazy"
+  alt="{{ alt | default: image_src.alt | default: '' }}"
+>

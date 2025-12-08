@@ -1330,3 +1330,7 @@ class CartPerformance {
     );
   }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  window.lozad().observe();
+});
