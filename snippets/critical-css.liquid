@@ -1,0 +1,16 @@
+{% if template contains 'product' %}
+<style id="critical-css">
+{% render 'product-critical-css' %}
+</style>
+{% endif %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('link[is="delay-stylesheet"]').forEach(link => {
+        link.rel = 'stylesheet';
+    });
+    const criticalCssElement = document.getElementById('critical-css');
+    if (criticalCssElement) {
+        criticalCssElement.remove();
+    }
+});
+</script>

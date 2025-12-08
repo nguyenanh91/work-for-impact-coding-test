@@ -1,5 +1,7 @@
 node_modules
 styles
+scripts
+snapshots
 gulpfile.js
 package.json
 README.md
