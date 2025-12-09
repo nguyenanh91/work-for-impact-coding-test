@@ -8,6 +8,7 @@
     "gulp:css:compile-css": "gulp compile-css",
     "gulp:js:compile-core": "gulp compile-core",
     "gulp:js:compile-product-critical-css": "gulp compile-product-critical-css",
+    "gulp:js:compile-homepage-critical-css": "gulp compile-homepage-critical-css",
     "build": "gulp build",
     "serve:dev": "gulp dev",
     "pull:live": "shopify theme pull -s work-for-impact-dev-theme -l",

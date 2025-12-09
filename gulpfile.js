@@ -157,6 +157,54 @@ function compileProductCriticalCSS() {
   });
 }
 
+function compileHomePageCriticalCSS() {
+  return critical.generate({
+    base: './',
+    inline: false,
+    src: 'snapshots/index.html',
+    css: [
+      'assets/base.css',
+      'assets/section-image-banner.css',
+      'assets/component-cart-items.css',
+      'assets/component-cart-drawer.css',
+      'assets/component-cart.css',
+      'assets/component-totals.css',
+      'assets/component-price.css',
+      'assets/component-discounts.css',
+      'assets/component-predictive-search.css',
+      'assets/quantity-popover.css',
+      'assets/component-slideshow.css',
+      'assets/component-slider.css',
+      'assets/component-list-menu.css',
+      'assets/component-search.css',
+      'assets/component-menu-drawer.css',
+      'assets/component-price.css',
+      'assets/section-main-product.css',
+      'assets/component-accordion.css',
+      'assets/component-deferred-media.css',
+      'assets/component-product-variant-picker.css',
+      'assets/component-swatch-input.css',
+      'assets/component-swatch.css',
+      'assets/component-pickup-availability.css',
+      'assets/component-card.css',
+      'assets/section-footer.css',
+      'assets/component-newsletter.css',
+      'assets/component-list-menu.css',
+      'assets/component-list-payment.css',
+      'assets/component-list-social.css',
+    ],
+    dimensions: [
+      { width: 320, height: 480 },
+      { width: 768, height: 1024 },
+      { width: 1280, height: 960 }
+    ],
+    target: {
+      css: './snippets/homepage-critical-css.liquid',
+    },
+    ignore: ['@font-face']
+  });
+}
+
 function watchFiles() {
   gulp.watch('styles/**/*.scss', compileCSS);
   gulp.watch('scripts/cart/*.js', gulp.series(compileCartDrawerJs, compileCartNotificationJs));
@@ -166,8 +214,9 @@ function watchFiles() {
 
 gulp.task('compile-css', compileCSS);
 gulp.task('compile-product-critical-css', compileProductCriticalCSS);
+gulp.task('compile-homepage-critical-css', compileHomePageCriticalCSS);
 gulp.task('compile-core', compileCoreJs);
 gulp.task('compile-components', compileComponentJs);
 gulp.task('watch', watchFiles);
-gulp.task('build', gulp.parallel('compile-css', 'compile-product-critical-css', 'compile-core', 'compile-components'));
+gulp.task('build', gulp.parallel('compile-css', 'compile-product-critical-css', 'compile-homepage-critical-css', 'compile-core', 'compile-components'));
 gulp.task('dev', gulp.parallel('compile-css', 'compile-core', 'compile-components', 'watch'));

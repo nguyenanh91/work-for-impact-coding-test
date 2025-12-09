@@ -2,6 +2,10 @@
 <style id="critical-css">
 {% render 'product-critical-css' %}
 </style>
+{% elsif template contains 'index' %}
+<style id="critical-css">
+{% render 'homepage-critical-css' %}
+</style> 
 {% endif %}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
